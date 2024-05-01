@@ -123,7 +123,7 @@ We also encourage you to build the plugin from the source code, especially for t
 
 Before starting tracking, you should first configure the plugin. Click `Tools` - `Configuration` to open
 the configuration window. The configuration settings are stored in the `config.json` file in the `bin/` folder of
-your installed JetBrains IDE.
+your installed JetBrains IDE. If the IDE is installed in the default location, it may produce an "Access Denied" error at this point. Running the IDE in administrator mode or re-installing the IDE in a location that the user account has permission to edit are both possible solutions.
 
 <div style="text-align: center;">
     <img src="../static/config.png" style="max-width: 100%; width: 420px; height: auto;">
