@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/CodeGRITS">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.767501326148">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.767852685936">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -32,12 +32,12 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../favicon.png" rel="icon">
-    <link href="../resources/css/retype.css?v=3.5.0.767501326148" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.5.0.767852685936" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.5.0.767501326148" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.5.0.767852685936" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.5.0.767501326148" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.5.0.767501326148" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.5.0.767852685936" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.5.0.767852685936" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -281,31 +281,36 @@ for eye gaze. You could also uncheck the <code v-pre>Eye Tracking</code> option 
 </doc-anchor-target>
 <p>CodeGRITS is expected to be compatible with the entire family of <a href="https://www.jetbrains.com/">JetBrains IDEs</a>, including
 IntelliJ IDEA, PyCharm, Clion, etc. Due to the limited time, we did not specifically test CodeGRITS thoroughly on all
-of them. We provide a list of JetBrains IDEs that we have tested CodeGRITS on.</p>
+of them. We provide a list of JetBrains IDEs that we have tested CodeGRITS on. We also provide links to the download pages of older versions of the IDEs. The Version and Build Numbers are available on the right side of each page.</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="compact">
 <thead>
 <tr>
 <th style="text-align: center;">JetBrains IDEs</th>
 <th style="text-align: center;">Version</th>
+<th style="text-align: center;">Download Page</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: center;">IntelliJ IDEA</td>
 <td style="text-align: center;">2022.2 - 2023.3</td>
+<td style="text-align: center;"><a href="https://www.jetbrains.com/idea/download/other.html">IntelliJ IDEA Versions</a></td>
 </tr>
 <tr>
 <td style="text-align: center;">PyCharm</td>
 <td style="text-align: center;">2022.2 - 2023.3</td>
+<td style="text-align: center;"><a href="https://www.jetbrains.com/pycharm/download/other.html">PyCharm Versions</a></td>
 </tr>
 <tr>
 <td style="text-align: center;">Clion</td>
 <td style="text-align: center;">2022.2 - 2023.3</td>
+<td style="text-align: center;"><a href="https://www.jetbrains.com/clion/download/other.html">Clion Versions</a></td>
 </tr>
 <tr>
 <td style="text-align: center;">PhpStorm</td>
 <td style="text-align: center;">2022.2 - 2023.3</td>
+<td style="text-align: center;"><a href="https://www.jetbrains.com/phpstorm/download/other.html">PhpStorm Versions</a></td>
 </tr>
 </tbody>
 </table>
@@ -359,7 +364,7 @@ installation issues, especially the <code v-pre>tobii-research</code> package.</
 <th style="text-align: center;">JetBrains IDEs</th>
 <th style="text-align: center;">Operating System</th>
 <th style="text-align: center;">Version</th>
-<th style="text-align: center;">Download Link</th>
+<th style="text-align: center;">Download Page</th>
 </tr>
 </thead>
 <tbody>
@@ -413,7 +418,8 @@ tasks {
 Please refer to
 the <a href="https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html#configuration">Gradle IntelliJ Plugin - Configuration</a>
 and <a href="https://plugins.jetbrains.com/docs/intellij/dev-alternate-products.html">Plugins Targeting IntelliJ Platform-Based IDEs</a>
-for more details.</li>
+for more details.
+Refer to <span class="docs-emoji">&#x2699;&#xFE0F;</span> -&gt; <strong>About</strong> to find the Build Number of an installed IDE.</li>
 <li>Open the command line and run <code v-pre>./gradlew build</code> in the root folder to build the plugin.</li>
 <li>Find the plugin zip file in the <code v-pre>build/distributions</code> folder.</li>
 </ol>
@@ -425,7 +431,7 @@ for more details.</li>
 </doc-anchor-target>
 <ol>
 <li>Open the JetBrains IDE, click <code v-pre>File</code> - <code v-pre>Settings</code> - <code v-pre>Plugins</code> - <code v-pre>Install Plugin from Disk...</code> to install the plugin
-zip file.</li>
+zip file. Select the zip file directly, <strong>do not</strong> unzip.</li>
 <li>Restart IntelliJ IDEA to enable the plugin, then all CodeGRITS features are available in the <code v-pre>Tools</code> dropdown menu,
 including <code v-pre>Start/Stop Tracking</code>, <code v-pre>Pause/Resume Tracking</code>, and <code v-pre>Configuration</code>.</li>
 </ol>
